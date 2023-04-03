@@ -18,3 +18,21 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.colorSwitcherDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.colorSwitcherBtn {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-style: bold;
+  padding: 20px 40px;
+  margin: 100px;
+  background-color: crimson;
+  border-radius: 15px;
+
+}

@@ -1,10 +1,8 @@
 let refs = {
-    start: document.querySelector('[data-start]'),
-    stop: document.querySelector('[data-stop]'),
+    startBtn: document.querySelector('[data-start]'),
+    stopBtn: document.querySelector('[data-stop]'),
     body: document.querySelector('body'),    
 };
-
-let timerId = null;
 
 let colorChanger = {
   intervalId: null,
@@ -19,30 +17,28 @@ let colorChanger = {
       bodyBGColorChanger();
     }, 1000);
 
-    refs.start.disabled = true;
+    refs.startBtn.disabled = true;
   },
 
   stop() {
     clearInterval(this.intervalId);
     this.isActive = false;
-    refs.start.disabled = false;
+    refs.startBtn.disabled = false;
   },
 };
 
-refs.start.addEventListener('click', () => {
+refs.startBtn.addEventListener('click', () => {
   colorChanger.start();
 });
 
-refs.stop.addEventListener('click', () => {
+refs.stopBtn.addEventListener('click', () => {
   colorChanger.stop();
 });
 
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
 }
 
 function bodyBGColorChanger() {
-    refs.body.style.backgroundColor = getRandomHexColor();
-    
-    clearInterval(timerId);
+    refs.body.style.backgroundColor = getRandomHexColor();    
 }
