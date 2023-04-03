@@ -12,18 +12,20 @@
     <form class="form">
       <label>
         First delay (ms)
-        <input type="number" name="delay" required />
+        <input class="promiseInput" type="number" name="delay" required />
       </label>
       <label>
         Delay step (ms)
-        <input type="number" name="step" required />
+        <input class="promiseInput" type="number" name="step" required />
       </label>
       <label>
         Amount
-        <input type="number" name="amount" required />
-      </label>
-      <button type="submit">Create promises</button>
+        <input class="promiseInput" type="number" name="amount" required />
+      </label>      
     </form>
+    <div class="colorSwitcherDiv">
+    <button class="colorPromiseBtn" type="submit">Create promises</button>
+    </div>
 
     <script src="js/03-promises.js" type="module"></script>
   </body>
