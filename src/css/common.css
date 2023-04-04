@@ -36,6 +36,55 @@ img {
   border-radius: 15px;
 }
 
+.timerInputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timerInput {
+  justify-content: center;
+  font-size: 30px;
+  font-style: bold;
+  padding: 20px 80px;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  background-color: paleturquoise;
+  border-radius: 15px;
+}
+
+.timerBtn {
+  justify-content: center;
+  font-size: 30px;
+  font-style: bold;
+  padding: 20px 40px;  
+  background-color: paleturquoise;
+  border-radius: 15px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.timerField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.timerValue {
+  font-size: xxx-large;
+}
+
+.timerLabel {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .form {
     display: flex;
     width: 80%;
